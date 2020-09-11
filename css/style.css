@@ -1,0 +1,541 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:17px;
+    line-height:1.6;
+  }
+  
+.navbar {
+        font-family: "Alata";
+        font-size: 22px;   
+        position: fixed;
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #80bfff;
+        top:0;
+        width: 100%;
+        height: auto;
+        z-index: 9;
+}
+
+.navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 14px;
+        text-decoration: none;
+}
+
+.navbar a:hover{
+        background: #809fff
+}
+
+.navbarlinks {
+        float: right;;
+}
+
+.navbar-nav {
+    font-family: "Alata";
+    font-size: 22px;   
+    
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #80bfff;
+    top:0;
+    width: 100%;
+    height: auto;
+    z-index: 9;
+    
+}
+
+
+.nav-item-links {
+    background-color: #80bfff;
+        color: white;
+        align:right;
+        
+}
+
+#logo{
+        text-align:center;
+}
+
+main {
+        background-color: #fff;
+        padding: 0;
+        width: 100%
+    }
+
+.cabecera {
+        background-image: url('../images/fondo.jpg');
+        background-size:cover;
+        background-position:center;
+        background-attachment: fixed;
+        height:80vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:0 20px;
+}
+
+.cabeceratexto{
+        font-family:'Work Sans';
+        text-align: left;
+        color:white;
+}
+
+.cabeceratexto h1 {
+        font-size: 88px;
+        font-weight: 900;
+}
+
+.cabeceratexto h2 {
+        font-size: 28px;
+        font-weight: 100;
+}
+
+.buttoncabecera{
+        background-color:transparent;
+        border: solid;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display:inline-block;
+        font-size: 16px;
+        border-radius: 20px;
+        transition-duration: 0.4s;
+        outline:none;
+}
+
+.buttoncabecera:hover{
+        background-color:white;
+        color: #809fff
+}
+
+#perfil{
+        background-image: url('../images/olitas.webp');
+        background-color: 
+        #4747d1;
+        background-position:center;
+        height:80vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:0 20px;
+        position: relative;
+}
+
+#perfiltexto{
+        text-align: left;
+        position: relative;
+        background-color: white;
+        color: black;
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+        border-radius: 80px 10px 80px 10px;
+        -moz-border-radius: 80px 10px 80px 10px;
+        -webkit-border-radius: 80px 10px 80px 10px;
+        border: 0px solid #000000;
+      }
+
+#perfiltexto h1 {
+        font-family: 'Work Sans';
+        font-size: 65px;
+}
+
+#perfiltexto p {
+        font-family: 'Work Sans';
+        font-size: 20px;
+        font-weight: 100;
+}
+
+#perfiltexto:hover{
+        opacity: 0.8;
+        background-color: red;
+        color: white;
+}
+
+#servicios h1 {
+        font-family:Alata; 
+        text-align:center; 
+        color:#809fff; 
+        font-size: 80px; 
+        font-weight: 100;
+
+}
+
+.container {
+       position: relative;
+       overflow: hidden;
+       width: 100%;
+       height: 70vh;
+}
+
+.container .slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500%;
+        height: 100%;
+        animation: animate 16s linear infinite;
+}
+
+.container .slider .slide {
+        position: relative;    
+        width: 20%;
+        height: 100%;
+        float: left;
+}
+
+.container .slider .slide .caption {
+    font-family: 'Work Sans';
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.container .slider .slide .caption h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+    transition: 1s;
+}
+
+.container .slider .slide .caption h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 30px;
+    transition: 1s;
+}
+
+.container .slider .slide .caption p {
+   
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    transition: 1s;
+}
+
+.container .slider .slide.slide1 {
+        background: url('../images/translation.jpg');
+        background-size:cover;
+        background-position: center;
+}
+
+.container .slider .slide.slide2 {
+    background: url('../images/laptop.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide3 {
+    background: url('../images/notebook.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide4 {
+    background: url('../images/facultadok.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide1 {
+    background: url('../images/translation.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+@keyframes animate {
+        0% {
+            left: 0;
+        }
+        20% {
+            left: 0;
+        }
+        25% {
+            left: -100%;
+        }
+        45% {
+            left: -100%;
+        }
+        50% {
+            left: -200%;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%;
+        }
+        100% {
+            left: -400%;
+        }
+}
+
+@media (max-width: 768px) {
+    .navbarlinks {
+        float:left;
+}
+    
+    .container .slider .slide .caption {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 10px;
+        
+    }
+    
+    .container .slider .slide .caption h2 {
+        margin: 0 0 10px;
+        padding: 0;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .container .slider .slide .caption h3 {
+        margin: 0 0 20px;
+        padding: 0;
+        color: #fff;
+        font-size: 18px;
+        transition: 1s;
+    }
+
+    .container .slider .slide .caption p {
+        
+        color: #fff;
+        font-size: 12px;
+    }
+    #perfiltexto{
+        max-width:600px;
+        text-align: left;
+        position: relative;
+        background-color: white;
+        color: black;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        border-radius: 80px 10px 80px 10px;
+        -moz-border-radius: 80px 10px 80px 10px;
+        -webkit-border-radius: 80px 10px 80px 10px;
+        border: 0px solid #000000;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+    #perfiltexto h1 {
+        font-family: 'Work Sans';
+        font-size: 20px;
+    }
+
+    #perfiltexto p {
+        font-family: 'Work Sans';
+        font-size: 10px;
+        font-weight: 100;
+    }
+}    
+    
+ @media (max-width:400px){   
+    form {
+        width: 350px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.4);
+        padding: 20px 20px 20px 20px;
+        box-sizing: border-box;
+        margin-top: 40px;
+        border-radius: 80px 10px 80px 10px;
+        -moz-border-radius: 80px 10px 80px 10px;
+        -webkit-border-radius: 80px 10px 80px 10px;
+        border: 0px solid #000000;
+        font-family: "Alata";
+}
+    
+}
+
+#contacto{
+    background-image: url('../images/fondo.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 0px;
+}
+
+form {
+        width: 480px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.4);
+        padding: 20px 20px 20px 20px;
+        box-sizing: border-box;
+        margin-top: 60px;
+        border-radius: 80px 10px 80px 10px;
+        -moz-border-radius: 80px 10px 80px 10px;
+        -webkit-border-radius: 80px 10px 80px 10px;
+        border: 0px solid #000000;
+        font-family: "Alata";
+}
+
+form h2 {
+   color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+}
+
+form h3 {
+   font-size: 20px;
+    -webkit-text-fill-color: #809fff; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+}
+
+input, textarea{
+        width:100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+
+}
+
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+#botonform{
+    
+        background-color:white;
+        color: #809fff;
+        padding: 15px 32px;
+        text-align: center;
+        display:inline-block;
+        font-size: 16px;
+        border-radius: 20px;
+        transition-duration: 1s;
+        outline:none;
+}
+
+#botonform:hover{
+    cursor: pointer;
+    background-color: #809fff;
+    color: white;
+    border: rgba(0,0,0,.5);
+}
+
+#submitguess{  
+    background-color:white;
+    color: #809fff;
+    padding: 15px 32px;
+    text-align: center;
+    display:inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    transition-duration: 1s;
+    outline:none;
+}
+
+.guessSubmit {
+    background-color:white;
+    color: #809fff;
+    padding: 15px 32px;
+    text-align: center;
+    display:inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    transition-duration: 1s;
+    outline:none;
+
+}
+
+#submitguess:hover{
+    cursor: pointer;
+    background-color: #809fff;
+    color: white;
+    border: rgba(0,0,0,.5);
+}
+
+footer{
+    font-family:'Alata';
+    text-align:center;
+    background-color:black;
+    color:white;
+    vertical-align: top;
+
+}
+
+footer p{
+    margin:0;
+}
+
+#adivinanza{
+        color:white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        background-image: url('../images/fondo.jpg');
+        background-size:cover;
+        background-position:center;
+        background-attachment: fixed;
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:40px 0px;
+    }
+
+}
